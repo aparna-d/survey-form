@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>College Survey Form</h1>
+
+    <!--Create Form-->
+    <form id="form">
+
+        <!--Details-->
+        <div class="form-control">
+            <lable for="name" id="lable-name"><br>
+                Name
+            </lable>
+            <!--Iput Type Text-->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control" >
+            <label for="email"  id="lable-email"><br>
+                Email
+            </label>
+            <!--Iput Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your Email" />
+
+        </div>
+
+        <div class="form-control">
+            <lable for="age" id="lable-age"><br>
+                Age
+            </lable>
+            <!--Iput Type Text-->
+            <input type="text"
+                  id="age"
+                  placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <lable for="role" id="lable-role"><br>
+                Which option describes you the best?
+            </lable><br>
+
+            <!--Dropdown options-->
+            <select name="role" id="role"><br>
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <lable><br>
+                Would you Recommend your college to a friend ?
+            </lable><br>
+
+            <!--Input Type Radio Button-->
+            <label for="recommend-1">
+                <input type="radio"
+                       id="recommend-1"
+                       name="recommend">Yes</input>
+            </label><br>
+            <label for="recommend-2">
+                <input type="radio"
+                       id="recommend-2"
+                       name="recommend">No</input>
+            </label><br>
+            <label for="recommend-3">
+                <input type="radio"
+                       id="recommend-3"
+                       name="recommend">Maybe</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <lable><br>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </lable>
+            <!--input Type Checkbox-->
+            <lable for="inp-1"><br>
+                <input type="checkbox"
+                      name="inp">C</input></lable>
+            <lable for="inp-2"><br>
+                <input type="checkbox"
+                       name="inp">C++</input></lable>
+                       <lable for="inp-3"><br>
+                        <input type="checkbox"
+                              name="inp">HTML</input></lable>
+                    <lable for="inp-4"><br>
+                         <input type="checkbox"
+                                name="inp">Java</input></lable>
+                                <lable for="inp-5"><br>
+                                    <input type="checkbox"
+                                          name="inp">JavaScript</input></lable>  
+                                          <lable for="inp-6"><br>
+                                            <input type="checkbox"
+                                                  name="inp">Python</input></lable> 
+                                                  <lable for="inp-7"><br>
+                                                    <input type="checkbox"
+                                                          name="inp">React</input></lable>  
+                                                          <lable for="inp-8"><br>
+                                                            <input type="checkbox"
+                                                                  name="inp">Angular</input></lable>
+    </div>
+    <div class="form-control">
+        <lable for="comment"><br>
+            Any comments or suggestions
+        </lable><br>
+
+        <!--multi-line text input control-->
+        <textarea name="comment" id="comment"
+        placeholder="Enter your comments here">
+    </textarea>
+    </div>
+
+    <!--Multi-line Text Input Control-->
+    <button type="submit" value="submit" align="center">
+        Submit
+    </button>
+    </form>
+</body>
+</html>
